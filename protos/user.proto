@@ -16,8 +16,7 @@ message UserResponse {
 }
 
 message Info {
-    string username = 1;
-    string bio = 2;
-    string location = 3;
-    string avatar = 4;
+    string bio = 1;
+    string location = 2;
+    string avatar = 3;
 }

@@ -32,7 +32,7 @@ func (s *Server) GetUser(ctx context.Context, r *protos.UserRequest) (*protos.Us
 
 	res, err := http.Get(fmt.Sprintf("https://api.github.com/users/%v", username))
 	if err != nil {
-		s.log.Error("Conection faliled with Github:", err)
+		s.log.Error("Conection failed with Github:", err)
 	}
 
 	usr := &User{}
